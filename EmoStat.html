@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html>
+	<head>
+		<title>EmoStat</title>
+	</head>
+	<body>
+
+		<h1>Emotion Statistics</h1>
+		<p>This is a paragraph.</p>
+		<canvas id="myCanvas" width="900" height="500"></canvas>
+		<script>
+      		var canvas = document.getElementById('myCanvas');
+      		var context = canvas.getContext('2d');
+
+		    context.beginPath();
+		    context.rect(188, 30, 700, 450);
+	        
+	        context.lineWidth = 2;
+	        context.strokeStyle = 'black';
+	        context.stroke();
+    	</script>
+    	<form>
+    	<button id="Record" type="button" style="position: absolute; left: 190px;" onClick="recording">Record</button>
+    	<input type="file" accept="video/*;capture=camcorder">
+    	<script type="text/javascript">
+    		document.getElementById("Record").onclick =function recording(){
+    			//var ans=prompt("Can we use your webcam?");
+
+    		}
+    	</script>>
+    	<button id="Pause" type="button" style="position: absolute;left: 250px;" >Pause</button>
+    	<button id="Resume" type="button" style="position: absolute;left: 305px;" >Resume</button>
+    	<button id="Stop" type="button" style="position: absolute;left: 373px;">Stop</button>
+    	</form>
+	</body>
+</html>
